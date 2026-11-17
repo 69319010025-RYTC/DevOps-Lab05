@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velocity Ford F-250 Jigsaw</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">PC Browser Puzzle Game</p>
+          <h1>Velocity Ford F-250 Restomod</h1>
+        </div>
+        <button id="restartBtn" class="restart-btn">Restart</button>
+      </header>
+
+      <div class="hud">
+        <div class="status-panel">
+          <span class="status-label">Status</span>
+          <strong id="statusText">Arrange all 20 pieces</strong>
+        </div>
+        <div class="progress-panel">
+          <span class="status-label">Progress</span>
+          <strong id="progressText">0 / 20</strong>
+        </div>
+      </div>
+
+      <main class="game-layout">
+        <section class="board-panel">
+          <div id="board" class="board" aria-label="Puzzle board"></div>
+        </section>
+
+        <aside class="tray-panel">
+          <div class="tray-header">Puzzle Pieces</div>
+          <div id="tray" class="tray" aria-label="Puzzle pieces tray"></div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
